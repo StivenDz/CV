@@ -52,80 +52,177 @@
     ],
     "employment_history": [
       {
+        "position": "Head of Artificial Intelligence (Remote)",
+        "company": "Efletexia (Dream Tec)",
+        "dates": "01/DEC/2025 - Present",
+        "contributions": [
+          {
+            "name": "AI Negotiator Agent (Voice + WhatsApp)",
+            "tasks": [
+              "AI agent that negotiates over phone calls using an ElevenLabs voice and continues the negotiation in writing on WhatsApp.",
+              "WhatsApp agent orchestrated with n8n that picks up the call's context to close the deal over chat."
+            ]
+          },
+          {
+            "name": "Voice Agents",
+            "tasks": [
+              "Design and deployment of voice agents with Vapi and ElevenLabs that handle and place calls autonomously.",
+              "Claude and OpenAI as the agents' reasoning models, with prompts and tools connected to company systems."
+            ]
+          },
+          {
+            "name": "Real-Time License Plate Recognition (ALPR)",
+            "tasks": [
+              "License plate recognition software built in Python, processing live video from IP cameras over RTSP.",
+              "Plate reads integrated into the operational workflows of the freight and logistics company."
+            ]
+          },
+          {
+            "name": "Process Automation with n8n",
+            "tasks": [
+              "Numerous business process automations with n8n, integrating APIs, WhatsApp, databases and internal services.",
+              "Reduced repetitive manual work across operations and administration."
+            ]
+          },
+          {
+            "name": "Web Platforms & Landing Pages",
+            "tasks": [
+              "Development of web platforms with Next.js and corporate landing pages.",
+              "Claude used as a development assistant to speed up software delivery."
+            ]
+          }
+        ],
+        "link": "https://efletexia.com",
+        "logo": "./src/assets/logos/efletexia.svg",
+        "logoShape": "wide",
+        "id": "efletexia"
+      },
+      {
         "position": "Consultant - Full Stack Developer",
         "company": "Néutica",
         "dates": "20/AUG/2024 - Present",
         "logo": "./src/assets/logos/neutica.png",
         "contributions": [
           {
-            "name": "Wallet Management App",
-            "link": "https://walletmanagement.app",
+            "name": "Wanance App",
+            "link": "https://app.wanance.com",
             "tasks": [
-              "Developed using Node.js, NestJS, Spring Boot, and React.",
-              "Web application for personal and business financial management, focused on tracking transactions, categories, and supporting attachments.",
-              "PDF report generation system with customized financial charts.",
-              "Subscription module integrated with LATAM payment gateways (ePayco, Mercado Pago, Zona de Pagos).",
-              "Support for scheduled transactions and future integration with custom bank APIs.",
-              "Multi-user account management with Business Plan support."
+              "Personal finance web application built with React (frontend), NestJS and Spring Boot (backend).",
+              "Wallets, transactions, custom categories and tags, budgets, savings goals, investments, debts and shared expenses in a single dashboard.",
+              "Transactions can be logged without leaving the screen, with per-wallet balances and month-over-month comparison.",
+              "PDF reports with financial charts and a subscription module integrated with LATAM payment gateways (ePayco, Mercado Pago, Zona de Pagos)."
             ]
           },
           {
-            "name": "Wallet Management Landing",
-            "link": "https://walletmanagement.app/site",
+            "name": "Wanance Mobile",
+            "link": "https://wanance.com",
             "tasks": [
-              "Landing page built with Astro and Node.js.",
-              "Designed to present app features, capture leads, and drive conversions.",
-              "SEO-optimized, responsive, and ideal for digital ad campaigns."
+              "Android and iOS app built with React Native, sharing data and backend with the web app.",
+              "Always-visible action button to log transactions instantly and a bottom bar with the five daily-use areas.",
+              "Screens redesigned for mobile (wallets, transactions, categories and goals) instead of reusing the web dashboard."
             ]
           },
           {
-            "name": "Vainilla Rosse",
-            "link": "https://vainillarosse.com",
+            "name": "Wanance",
+            "link": "https://wanance.com",
             "tasks": [
-              "Official landing page for the launch of the jewelry brand, including countdown timer.",
-              "Developed with Astro and NestJS.",
-              "Elegant, modern visual design focused on brand value and lead generation.",
-              "SEO optimization, fast loading, and modular architecture for future scaling."
+              "Product landing page built with Next.js and React.",
+              "Interactive feature selector with real app screens, user journey, pricing plans and FAQ.",
+              "Optimized for SEO and sign-up conversion."
             ]
           },
           {
-            "name": "Néutica",
-            "link": "https://neutica.tech",
+            "name": "BlackFrost Management",
+            "link": "https://app.blackfrost.es",
             "tasks": [
-              "Agency landing page developed with Astro, React, and NestJS.",
-              "Responsive and modern design showcasing mission, vision, values, and services by sector.",
-              "Dynamic JSON-based services structure for flexibility and scalability.",
-              "Interactive UI components with smooth animations and SEO-friendly architecture."
+              "Internal dashboard built with React (frontend), Spring Boot (core backend) and NestJS (reporting).",
+              "End-to-end chained workflow: requests → quotes → projects → work orders and expenses → invoicing.",
+              "Hierarchical budgets (categories, subcategories and items) with automatic labor and material cost calculation.",
+              "Expenses with invoices stored in Google Drive and PDF reports; calendar, client records, project-level roles and blog manager."
             ]
           },
           {
             "name": "BlackFrost",
             "link": "https://blackfrost.es",
             "tasks": [
-              "Construction project management web app built with React (frontend), Spring Boot (core backend), and NestJS (reporting module).",
-              "Complete budget management using a hierarchical tree structure: categories, subcategories, and items.",
-              "Work part creation with item selection from the budget and automatic cost calculations for labor and materials.",
-              "Expense tracking module with invoice uploads, cloud storage integration (Google Drive), and PDF report generation.",
-              "Role-based user management with project-level permissions."
+              "Corporate website for an HVAC and ventilation company, built with Astro and deployed on Vercel.",
+              "Services grouped by system type (splits, VRF/VRV, chillers, heat pumps, ventilation…) for residential and industrial audiences.",
+              "Project gallery and RITE certifications, with technical support and quote request form on the home page."
+            ]
+          },
+          {
+            "name": "BlackFrost Blog",
+            "link": "https://blog.blackfrost.es",
+            "tasks": [
+              "SEO-oriented technical blog built with Next.js and React.",
+              "Categories (energy savings, maintenance, heat pumps, regulations…), reading time, featured articles and quote call-to-action.",
+              "Articles written and published from the BlackFrost Management dashboard."
+            ]
+          },
+          {
+            "name": "Tu Cabaña",
+            "link": "https://tucabana.com",
+            "tasks": [
+              "Vacation rental marketplace in Santa Marta (cabins, boats and yachts) built with Next.js and React.",
+              "Inventory across six zones with filters and listings showing gallery, capacity, rooms and seasonal nightly price.",
+              "Multi-booking cart with checkout via WhatsApp, the business's existing support channel."
+            ]
+          },
+          {
+            "name": "AI Agents & Automation",
+            "tasks": [
+              "Design of AI agents, chatbots and process automations with n8n, OpenAI, Claude, LangChain, Supabase and Qdrant.",
+              "Integrations with WhatsApp, Instagram, Twilio and Vapi (voice agents) connected to each client's systems."
+            ]
+          },
+          {
+            "name": "Néutica",
+            "link": "https://neutica.dev",
+            "tasks": [
+              "Agency website (development, AI and automation) with a case-study portfolio for each project.",
+              "Self-managed admin panel to edit services, projects, FAQ and images without touching code.",
+              "Technical SEO: HTML-rendered content, per-page metadata, sitemap and structured data."
             ]
           },
           {
             "name": "Vainilla Rosse Dashboard",
             "link": "https://dashboard.vainillarosse.com",
             "tasks": [
-              "Panel administrativo empresarial desarrollado con Spring Boot (backend) y React + TypeScript (frontend).",
-              "Sistema completo de gestión de productos (CRUD): creación, edición, eliminación y visualización con soporte de imágenes y descripciones.",
-              "Carga de imágenes con vista previa y validación de peso.",
-              "Categorización de productos por colección o tipo, optimizando la organización del catálogo.",
-              "Login seguro con autenticación basada en tokens y control de sesión.",
-              "Dashboard responsive desarrollado completamente con React + TypeScript.",
-              "Integración con Amazon Web Services (S3) para el almacenamiento seguro y eficiente de las imágenes de productos.",
-              "Base de datos estructurada en SQL Server, optimizada para consultas rápidas y escalabilidad a largo plazo.",
-              "Diseño moderno y coherente con la identidad visual de la marca Vainilla Rosse.",
-              "Despliegue en servidor privado con SSL bajo el subdominio de la marca y conexión directa con la landing principal."
+              "Admin dashboard built with Spring Boot (backend) and React + TypeScript (frontend).",
+              "Full product CRUD with image upload, preview, size validation and categorization by collection or type.",
+              "Token-based authentication, product images stored on AWS S3 and SQL Server database.",
+              "Deployed on a private server with SSL under the brand's subdomain."
+            ]
+          },
+          {
+            "name": "Vainilla Rosse",
+            "link": "https://vainillarosse.com",
+            "tasks": [
+              "Launch landing page for a gold-plated jewelry brand, built with Astro and NestJS.",
+              "Countdown, opening dinner itinerary, guest list and event activities."
+            ]
+          },
+          {
+            "name": "Stephania Valero",
+            "link": "https://stephaniavalero.com",
+            "tasks": [
+              "Portfolio for a Santa Marta photographer with series by category and online session booking."
+            ]
+          },
+          {
+            "name": "Digital Invitations",
+            "links": [
+              "https://angiely-joshep.vercel.app",
+              "https://golden-circle-mariaclaudiastore.vercel.app"
+            ],
+            "tasks": [
+              "Angiely & Joshep: wedding invitation with countdown, location, dress code, shared album and RSVP via WhatsApp.",
+              "The Golden Circle: invitation to María Claudia Store's loyalty event with itinerary, attendance conditions and seat confirmation."
             ]
           }
-        ]
+        ],
+        "link": "https://neutica.dev",
+        "id": "neutica"
       },
       {
         "position": "Full Stack Developer",
@@ -181,12 +278,14 @@
               "Involvement in estimating and planning projects for building new portals, rebuilding web services, and developing specific modules (MQA Americas, Feduro)."
             ]
           }
-        ]
+        ],
+        "id": "mqa"
       },
       {
         "position": "Intern as Accounting Technician for Commercial and Financial Operations",
         "company": "(ASI) ASESORÍAS Y SISTEMAS INTEGRALES",
-        "dates": "21/SEP/2018 - 21/OCT/2019"
+        "dates": "21/SEP/2018 - 21/OCT/2019",
+        "id": "asi"
       }
     ]
   },
@@ -243,80 +342,177 @@
     ],
     "employment_history": [
       {
+        "position": "Jefe de Inteligencia Artificial (Remoto)",
+        "company": "Efletexia (Dream Tec)",
+        "dates": "01/DEC/2025 - Actualmente",
+        "contributions": [
+          {
+            "name": "Agente Negociador con IA (Voz + WhatsApp)",
+            "tasks": [
+              "Agente de IA que negocia por llamada telefónica con voz generada en ElevenLabs y continúa la negociación por escrito en WhatsApp.",
+              "Agente de WhatsApp orquestado con n8n que retoma el contexto de la llamada para cerrar el acuerdo por chat."
+            ]
+          },
+          {
+            "name": "Agentes de Voz",
+            "tasks": [
+              "Diseño y despliegue de agentes de voz con Vapi y ElevenLabs para atender y realizar llamadas de forma autónoma.",
+              "Uso de Claude y OpenAI como modelos de razonamiento de los agentes, con prompts y herramientas conectadas a los sistemas de la empresa."
+            ]
+          },
+          {
+            "name": "Lectura de Placas en Tiempo Real (ALPR)",
+            "tasks": [
+              "Software de reconocimiento de placas vehiculares desarrollado en Python, procesando en vivo el video de cámaras IP mediante RTSP.",
+              "Integración de las lecturas con los flujos operativos de la empresa de transporte y logística."
+            ]
+          },
+          {
+            "name": "Automatización de Procesos con n8n",
+            "tasks": [
+              "Numerosas automatizaciones de procesos de negocio con n8n, integrando APIs, WhatsApp, bases de datos y servicios internos.",
+              "Reducción de trabajo manual repetitivo en las áreas operativas y administrativas."
+            ]
+          },
+          {
+            "name": "Plataformas Web y Landing Pages",
+            "tasks": [
+              "Desarrollo de plataformas web con Next.js y landing pages corporativas.",
+              "Uso de Claude como asistente de desarrollo para acelerar la entrega de software."
+            ]
+          }
+        ],
+        "link": "https://efletexia.com",
+        "logo": "./src/assets/logos/efletexia.svg",
+        "logoShape": "wide",
+        "id": "efletexia"
+      },
+      {
         "position": "Consultor - Full Stack Developer",
         "company": "Néutica",
         "dates": "20/AUG/2024 - Actualmente",
         "logo": "./src/assets/logos/neutica.png",
         "contributions": [
           {
-            "name": "Wallet Management App",
-            "link": "https://walletmanagement.app",
+            "name": "Wanance App",
+            "link": "https://app.wanance.com",
             "tasks": [
-              "Desarrollada con Node.js, NestJS, Spring Boot y React.",
-              "Aplicación web de gestión financiera personal y empresarial con enfoque en control de movimientos, categorías y adjuntos de soporte.",
-              "Implementación de sistema de reportes en PDF con gráficos financieros personalizados.",
-              "Módulo de suscripciones con integración de pasarelas de pago para LATAM (ePayco, Mercado Pago, Zona de Pagos).",
-              "Gestión de movimientos programados y sincronización futura con APIs bancarias propias.",
-              "Control de usuarios por cuenta y multitenancy en el plan Business."
+              "Aplicación web de finanzas personales desarrollada con React (frontend), NestJS y Spring Boot (backend).",
+              "Monederos, movimientos, categorías y etiquetas propias, presupuestos, metas de ahorro, inversiones, deudas y gastos compartidos en un solo panel.",
+              "Registro de movimientos sin cambiar de pantalla, con saldo por monedero y comparativa mensual.",
+              "Reportes en PDF con gráficos financieros y módulo de suscripciones integrado con pasarelas LATAM (ePayco, Mercado Pago, Zona de Pagos)."
             ]
           },
           {
-            "name": "Wallet Management Landing",
-            "link": "https://walletmanagement.app/site",
+            "name": "Wanance Móvil",
+            "link": "https://wanance.com",
             "tasks": [
-              "Landing page desarrollada con Astro y Node.js.",
-              "Diseñada para explicar los beneficios de la app, captar registros y mejorar la conversión.",
-              "Optimizada para SEO, responsive y pensada para campañas publicitarias digitales."
+              "Aplicación para Android e iOS desarrollada con React Native, compartiendo datos y backend con la app web.",
+              "Botón de acción siempre visible para registrar movimientos al instante y barra inferior con las cinco áreas de uso diario.",
+              "Pantallas rediseñadas para móvil (monederos, movimientos, categorías y metas) en lugar de reutilizar las del panel web."
             ]
           },
           {
-            "name": "Vainilla Rosse",
-            "link": "https://vainillarosse.com",
+            "name": "Wanance",
+            "link": "https://wanance.com",
             "tasks": [
-              "Landing oficial del lanzamiento de la marca de joyería con conteo regresivo.",
-              "Desarrollada con Astro y NestJS.",
-              "Diseño visual elegante y moderno enfocado en transmitir valor de marca y captar leads.",
-              "Optimización SEO, tiempos de carga mínimos y estructura modular para escalabilidad futura."
+              "Landing de producto desarrollada con Next.js y React.",
+              "Selector interactivo de funciones con pantallas reales de la app, recorrido de uso, planes y preguntas frecuentes.",
+              "Optimizada para SEO y conversión de registros."
             ]
           },
           {
-            "name": "Néutica",
-            "link": "https://neutica.tech",
+            "name": "BlackFrost Gestión",
+            "link": "https://app.blackfrost.es",
             "tasks": [
-              "Landing institucional de la agencia desarrollada con Astro, React y NestJS.",
-              "Diseño adaptable y moderno que comunica misión, visión, valores y servicios por sector.",
-              "Estructura de servicios dinámica basada en JSON, reutilizable y escalable.",
-              "Integración de componentes interactivos con animaciones suaves y arquitectura optimizada para SEO."
+              "Panel interno desarrollado con React (frontend), Spring Boot (backend principal) y NestJS (reportes).",
+              "Flujo encadenado de principio a fin: solicitudes → presupuestos → proyectos → partes de trabajo y gastos → facturación.",
+              "Presupuestos jerárquicos (categorías, subcategorías e ítems) con cálculo automático de mano de obra y materiales.",
+              "Gastos con facturas adjuntas en Google Drive y reportes PDF; calendario, fichero de clientes, roles por proyecto y gestor del blog."
             ]
           },
           {
             "name": "BlackFrost",
             "link": "https://blackfrost.es",
             "tasks": [
-              "Aplicación web de gestión de obras desarrollada con React (frontend), Spring Boot (backend principal) y NestJS (reportes).",
-              "Manejo completo de presupuestos con sistema jerárquico tipo árbol: categorías, subcategorías e ítems.",
-              "Creación de partes de obra con selección de ítems del presupuesto y cálculo automático de costos por mano de obra y materiales.",
-              "Módulo de gastos con control de facturas adjuntas, almacenamiento en la nube (Google Drive) y generación de reportes en PDF.",
-              "Sistema de roles y usuarios con permisos diferenciados por proyecto."
+              "Sitio corporativo de una empresa de climatización y ventilación, desarrollado con Astro y desplegado en Vercel.",
+              "Servicios agrupados por tipo de sistema (splits, VRF/VRV, enfriadoras, aerotermia, ventilación…) para público residencial e industrial.",
+              "Galería de obras y certificaciones RITE, con formulario de asistencia técnica y solicitud de presupuesto en la portada."
+            ]
+          },
+          {
+            "name": "BlackFrost Blog",
+            "link": "https://blog.blackfrost.es",
+            "tasks": [
+              "Blog técnico desarrollado con Next.js y React, orientado a posicionamiento SEO.",
+              "Categorías (ahorro energético, mantenimiento, aerotermia, normativa…), tiempo de lectura, artículos destacados y llamada a presupuesto.",
+              "Artículos redactados y publicados desde el panel de BlackFrost Gestión."
+            ]
+          },
+          {
+            "name": "Tu Cabaña",
+            "link": "https://tucabana.com",
+            "tasks": [
+              "Marketplace de alquiler vacacional en Santa Marta (cabañas, lanchas y yates) desarrollado con Next.js y React.",
+              "Inventario de seis zonas con filtros y fichas con galería, capacidad, habitaciones y precio por noche según temporada.",
+              "Carrito para reunir varias reservas con cierre por WhatsApp, el canal de atención del negocio."
+            ]
+          },
+          {
+            "name": "Agentes de IA y Automatización",
+            "tasks": [
+              "Diseño de agentes de IA, chatbots y automatizaciones de procesos con n8n, OpenAI, Claude, LangChain, Supabase y Qdrant.",
+              "Integraciones con WhatsApp, Instagram, Twilio y Vapi (agentes de voz) conectadas a los sistemas de cada cliente."
+            ]
+          },
+          {
+            "name": "Néutica",
+            "link": "https://neutica.dev",
+            "tasks": [
+              "Sitio de la agencia (desarrollo, IA y automatización) con portafolio de casos de estudio por proyecto.",
+              "Panel autogestionable para editar servicios, proyectos, preguntas frecuentes e imágenes sin tocar código.",
+              "SEO técnico: contenido renderizado en HTML, metadatos por página, sitemap y datos estructurados."
             ]
           },
           {
             "name": "Vainilla Rosse Dashboard",
             "link": "https://dashboard.vainillarosse.com",
             "tasks": [
-              "Enterprise management dashboard developed with Spring Boot (backend) and React + TypeScript (frontend).",
-              "Full CRUD system for product management: creation, editing, deletion, and visualization with image and description support.",
-              "Image upload with real-time preview and file size validation.",
-              "Product categorization by collection or type for better organization and scalability.",
-              "Secure login with token-based authentication and session management.",
-              "Responsive dashboard interface built entirely with React + TypeScript.",
-              "Integration with Amazon Web Services (S3) for secure and efficient product image storage.",
-              "Database structured in SQL Server, optimized for fast queries and long-term scalability.",
-              "Modern, brand-aligned design consistent with the Vainilla Rosse visual identity.",
-              "Deployed on a private server with SSL under the brand’s subdomain and directly connected to the main landing page."
+              "Panel administrativo desarrollado con Spring Boot (backend) y React + TypeScript (frontend).",
+              "CRUD completo de productos con carga de imágenes, vista previa, validación de peso y categorización por colección o tipo.",
+              "Autenticación basada en tokens, almacenamiento de imágenes en AWS S3 y base de datos SQL Server.",
+              "Despliegue en servidor privado con SSL bajo el subdominio de la marca."
+            ]
+          },
+          {
+            "name": "Vainilla Rosse",
+            "link": "https://vainillarosse.com",
+            "tasks": [
+              "Landing del lanzamiento de una marca de joyería en oro laminado, desarrollada con Astro y NestJS.",
+              "Cuenta regresiva, itinerario de la cena de inauguración, invitadas y dinámicas del evento."
+            ]
+          },
+          {
+            "name": "Stephania Valero",
+            "link": "https://stephaniavalero.com",
+            "tasks": [
+              "Portafolio de una fotógrafa de Santa Marta con series por categoría y reserva de sesiones en línea."
+            ]
+          },
+          {
+            "name": "Invitaciones Digitales",
+            "links": [
+              "https://angiely-joshep.vercel.app",
+              "https://golden-circle-mariaclaudiastore.vercel.app"
+            ],
+            "tasks": [
+              "Angiely & Joshep: invitación de boda con cuenta atrás, ubicación, código de vestimenta, álbum compartido y confirmación por WhatsApp.",
+              "The Golden Circle: invitación al evento de fidelización de María Claudia Store con itinerario, condiciones de asistencia y confirmación de cupo."
             ]
           }
-        ]
+        ],
+        "link": "https://neutica.dev",
+        "id": "neutica"
       },
       {
         "position": "Desarrollador Full Stack",
@@ -372,12 +568,14 @@
               "Participación en la estimación y planificación de proyectos para construir nuevos portales, reconstruir servicios web y desarrollar módulos específicos (MQA Americas, Feduro)."
             ]
           }
-        ]
+        ],
+        "id": "mqa"
       },
       {
         "position": "Practicante como Técnico en Contabilidad de Operaciones Comerciales y Financieras",
         "company": "(ASI) ASESORÍAS Y SISTEMAS INTEGRALES",
-        "dates": "21/SEP/2018 - 21/OCT/2019"
+        "dates": "21/SEP/2018 - 21/OCT/2019",
+        "id": "asi"
       }
     ]
   }

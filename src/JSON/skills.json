@@ -1,8 +1,7 @@
 [
   {
-    "section":"Front-End",
-    "skills":[
-
+    "section": "Front-End",
+    "skills": [
       {
         "name": "HTML5",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -39,27 +38,37 @@
         "knowledge": 5
       },
       {
-        "name": "AngularJS",
-        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+        "name": "Next.js",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        "knowledge": 4.5
+      },
+      {
+        "name": "Astro",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg",
+        "knowledge": 4.5
+      },
+      {
+        "name": "Angular",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
         "knowledge": 4
       },
       {
         "name": "React Native",
-        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg",
         "knowledge": 4.5
       }
     ]
   },
   {
-    "section":"Back-End",
-    "skills":[
+    "section": "Back-End",
+    "skills": [
       {
         "name": "NodeJS",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
         "knowledge": 5
       },
       {
-        "name": "NestJs ",
+        "name": "NestJs",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
         "knowledge": 5
       },
@@ -77,15 +86,20 @@
         "name": "SpringBoot",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
         "knowledge": 5
+      },
+      {
+        "name": "Python",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        "knowledge": 4.5
       }
     ]
   },
   {
-    "section":"Automation",
-    "skills":[
+    "section": "AI & Automation",
+    "skills": [
       {
         "name": "n8n",
-        "svgIcon": "https://n8n.io/brandguidelines/logo-dark.svg",
+        "svgIcon": "https://cdn.simpleicons.org/n8n",
         "knowledge": 5
       },
       {
@@ -94,13 +108,28 @@
         "knowledge": 5
       },
       {
+        "name": "Claude",
+        "svgIcon": "https://cdn.simpleicons.org/claude",
+        "knowledge": 4.5
+      },
+      {
+        "name": "LangChain",
+        "svgIcon": "https://cdn.simpleicons.org/langchain",
+        "knowledge": 4
+      },
+      {
         "name": "Vapi",
         "svgIcon": "https://vapi.ai/brand/img/full-logo-square-1.svg",
         "knowledge": 5
       },
       {
+        "name": "ElevenLabs",
+        "svgIcon": "https://cdn.simpleicons.org/elevenlabs",
+        "knowledge": 5
+      },
+      {
         "name": "OpenAI",
-        "svgIcon": "https://1000marcas.net/wp-content/uploads/2025/02/OpenAI-Logo-2022.png",
+        "svgIcon": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg",
         "knowledge": 5
       },
       {
@@ -113,12 +142,11 @@
         "svgIcon": "./src/assets/icons/whatsapp.png",
         "knowledge": 5
       }
-
     ]
   },
   {
-    "section":"Storage",
-    "skills":[
+    "section": "Storage",
+    "skills": [
       {
         "name": "MySQL",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -128,6 +156,16 @@
         "name": "SQL Server",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
         "knowledge": 5
+      },
+      {
+        "name": "Supabase",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+        "knowledge": 4
+      },
+      {
+        "name": "AWS S3",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg",
+        "knowledge": 4
       },
       {
         "name": "FireBase",
@@ -147,12 +185,17 @@
     ]
   },
   {
-    "section":"DevOps",
-    "skills":[
+    "section": "DevOps",
+    "skills": [
       {
         "name": "Docker",
         "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
         "knowledge": 4
+      },
+      {
+        "name": "Vercel",
+        "svgIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        "knowledge": 4.5
       },
       {
         "name": "Ubuntu",

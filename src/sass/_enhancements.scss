@@ -1,0 +1,401 @@
+// UI enhancements: toolbar, animations, timeline and stable hover states
+:root {
+    --accent: #2664ea;
+    --accent-soft: #2664ea1a;
+    --ink: #1f1f1f;
+    --muted: #5f6368;
+    --line: #ececec;
+    --card-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+// Content fades in once the data is rendered instead of popping in
+body > main {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+body.is-ready > main {
+    opacity: 1;
+}
+
+// Header entrance -------------------------------------------------
+header > div.contentImg > img {
+    animation: photoIn 1s var(--ease-out) both;
+}
+
+header div.name h3 {
+    animation: fadeUp .8s .5s var(--ease-out) both;
+}
+
+div.wrapper > a.iconsocial {
+    animation: fadeUp .6s var(--ease-out) both;
+
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{0.7 + $i * 0.08}s;
+        }
+    }
+
+    & > span > i {
+        transition: transform .25s var(--ease-out), color .25s;
+    }
+
+    &:hover > span > i {
+        transform: translateY(-3px) scale(1.15);
+    }
+}
+
+@keyframes photoIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -46%) scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// Scroll reveal ----------------------------------------------------
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+        opacity .6s var(--ease-out) var(--reveal-delay, 0ms),
+        transform .6s var(--ease-out) var(--reveal-delay, 0ms);
+
+    &.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// Toolbar ------------------------------------------------------------
+.toolbar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: fadeUp .6s 1s var(--ease-out) both;
+
+    button,
+    a {
+        font: 500 13px 'Poppins', sans-serif;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        transition: background-color .2s, color .2s, transform .2s var(--ease-out);
+
+        &:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        &:active {
+            transform: scale(.96);
+        }
+    }
+
+    .lang-switch {
+        display: flex;
+        padding: 2px;
+        border-radius: 999px;
+        background: #f1f3f4;
+
+        button {
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+
+            &[aria-pressed="true"] {
+                background: #fff;
+                color: var(--ink);
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    .btn-primary {
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+
+        &:hover {
+            background: #1d4fc4;
+        }
+    }
+
+    .btn-icon {
+        width: 34px;
+        height: 34px;
+        justify-content: center;
+        border-radius: 50%;
+        background: transparent;
+        color: var(--ink);
+
+        &:hover {
+            background: #f1f3f4;
+        }
+    }
+
+    // Once the header is scrolled away it becomes a compact floating button
+    &.is-floating {
+        position: fixed;
+        top: auto;
+        bottom: 16px;
+        animation: floatIn .35s var(--ease-out) both;
+
+        .lang-switch,
+        .btn-icon {
+            display: none;
+        }
+
+        .btn-primary {
+            padding: 10px 14px;
+        }
+    }
+
+    // Phones: always a bottom bar, so it never covers the photo
+    @media screen and (max-width: 740px) {
+        &,
+        &.is-floating {
+            position: fixed;
+            top: auto;
+            bottom: 14px;
+            right: 50%;
+            transform: translateX(50%);
+            animation: none;
+
+            .lang-switch {
+                display: flex;
+            }
+
+            .btn-icon {
+                display: none;
+            }
+        }
+
+        .btn-primary span {
+            font-size: 12px;
+        }
+    }
+}
+
+// Room so the bottom bar never hides the last lines on phones
+@media screen and (max-width: 740px) {
+    body:has(.toolbar) > main {
+        padding-bottom: 80px;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// Section titles ------------------------------------------------------
+main section.description > div > h3,
+main aside > div > h4 {
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 14px !important;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 42px;
+        height: 3px;
+        border-radius: 3px;
+        background: var(--accent);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main aside > div > h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// Cards: lift on hover without changing layout ------------------------
+#skillsContent section > div > div,
+.education > div > div {
+    transition: transform .25s var(--ease-out), box-shadow .25s var(--ease-out), border-color .25s;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--card-shadow);
+        border-color: transparent;
+        background-color: #fff !important;
+    }
+}
+
+#skillsContent figure > img,
+.icon-fallback {
+    transition: transform .3s var(--ease-out);
+}
+
+#skillsContent section > div > div:hover figure > img {
+    transform: scale(1.1) rotate(-4deg);
+}
+
+.icon-fallback {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+// Employment timeline --------------------------------------------------
+.history > .timeline {
+    position: relative;
+    padding-left: 22px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        bottom: 8px;
+        width: 2px;
+        border-radius: 2px;
+        background: linear-gradient(to bottom, var(--accent), #e3e8f5);
+    }
+
+    & > .job {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--accent);
+            box-sizing: border-box;
+        }
+
+        & > div > h4 > a {
+            color: inherit;
+            text-decoration: none;
+            background-image: linear-gradient(var(--accent), var(--accent));
+            background-size: 0 2px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size .3s var(--ease-out), color .2s;
+
+            &:hover {
+                color: var(--accent);
+                background-size: 100% 2px;
+            }
+        }
+
+        & > div > figure.wide > img {
+            width: auto !important;
+            height: 30px !important;
+            max-width: 140px;
+            border-radius: 0 !important;
+            object-fit: contain !important;
+        }
+    }
+
+    .project {
+        border-radius: 8px;
+
+        & > div > h6 {
+            line-height: 1.3 !important;
+        }
+        transition: background-color .25s;
+
+        &:hover {
+            background-color: #f8faff;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        padding-left: 16px;
+
+        & > .job::before {
+            left: -16px;
+        }
+    }
+}
+
+// Reduced motion & PDF mode ----------------------------------------------
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-delay: 0ms !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+.pdf-mode {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    body > main {
+        opacity: 1;
+    }
+
+    .toolbar {
+        display: none !important;
+    }
+}

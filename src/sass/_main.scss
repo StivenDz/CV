@@ -2,7 +2,9 @@ header {
     width: 100%;
     display: flex;
     position: relative;
-    animation: expand 2s 1 both cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    height: 100vh;
+    height: 100svh;
+    min-height: 520px;
     background-attachment: fixed;
     overflow: hidden;
     max-height: 650px !important;
@@ -467,9 +469,7 @@ body {
                         padding-left: 3px;
 
                         &:hover {
-                            text-decoration: none;
-                            color: rgb(0, 0, 0);
-                            font-weight: 900;
+                            color: var(--accent);
                         }
                     }
 
@@ -488,9 +488,7 @@ body {
                             padding-left: 3px;
 
                             &:hover {
-                                text-decoration: none;
-                                color: rgb(0, 0, 0);
-                                font-weight: 500;
+                                color: var(--accent);
                             }
                         }
                     }

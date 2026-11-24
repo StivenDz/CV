@@ -72,17 +72,17 @@ body{
     }
 }
 @keyframes letterAppear {
-    0% {
-        width:0;
-        white-space: nowrap;
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
     }
 }
 
 @mixin Appear {
-    overflow: hidden;
     width: 100%;
-    white-space: nowrap;
-    animation: letterAppear 1s 1 steps(30)
+    animation: letterAppear 1.1s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .appear{

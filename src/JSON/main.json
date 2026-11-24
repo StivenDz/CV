@@ -1,12 +1,11 @@
 {
   "en": {
-    "professionalTitle": "Full Stack Developer",
+    "professionalTitle": "Head of AI · Full Stack Developer",
     "appTitles": {
       "skills": "Skills",
-      "languagues": "Languagues",
+      "languagues": "Languages",
       "hobbies": "Hobbies",
       "contact": "Contact",
-
       "profile": "Profile",
       "education": "Education",
       "employmentHistory": "Employment History"
@@ -14,14 +13,26 @@
     "presentation": [
       "<code>< Hi there I'm Stiven Diaz /> 👋</code>",
       "<span>- 🎉 I'm <span id='yearsOld'></span></span>",
-      "<span>- 🥇 I'm a Full Stack Developer</span>"
+      "<span>- 🥇 Head of AI & Full Stack Developer: voice agents, automation, web & mobile</span>"
     ],
-    "description": "I am a Full Stack Developer with extensive experience in all stages of web development, from initial design and architecture to deployment and maintenance. I have a strong background in developing, testing, and debugging both frontend and backend applications, ensuring seamless integration and performance. <br /><br /> I bring a diverse and versatile skill set, proficient in technologies such as TypeScript, SASS, ReactJS, Angular, Node.js and Java (SpringBoot). I am adept at self-managing during independent projects and excel in collaborative team environments.",
+    "description": "Full Stack Developer and Head of Artificial Intelligence with 4+ years of experience building products end to end, from architecture and UI design to deployment and production support. Since December 2025 I lead AI at Efletexia, a freight and logistics company, where I build voice agents (Vapi, ElevenLabs), an AI negotiator agent that negotiates by phone and follows up on WhatsApp, real-time license plate recognition in Python over RTSP cameras, and dozens of n8n automations. <br /><br /> I also work as a consultant at Néutica building web apps, mobile apps and landing pages (Wanance, BlackFrost, Tu Cabaña). My stack: TypeScript, React, Next.js, Astro, React Native, Node.js (NestJS), Java (Spring Boot) and Python, plus Claude, OpenAI and LangChain for AI.",
     "professionalExperiences": [
       {
-        "name": "End-to-End Web Development",
+        "name": "End-to-End Product Development (Web & Mobile)",
         "descriptions": [
-          "Skilled in developing and maintaining complex web portals and internal applications, implementing new features, and optimizing existing functionalities for various clients, including CENOSA, Do it Center, ILP, CEMPRO, MQA Americas, and Feduro."
+          "Design, development and deployment of complete products: web apps, Android/iOS apps, landing pages and admin dashboards, from requirements to production (Wanance, BlackFrost, Tu Cabaña, Vainilla Rosse)."
+        ]
+      },
+      {
+        "name": "AI Agents & Automation",
+        "descriptions": [
+          "Voice agents with Vapi and ElevenLabs, a multichannel AI negotiator (phone + WhatsApp), chatbots and automated workflows with n8n, Claude, OpenAI and LangChain, integrated with WhatsApp, Instagram and Twilio."
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "descriptions": [
+          "Real-time license plate recognition (ALPR) in Python, processing live RTSP streams from IP cameras and feeding the results into business workflows."
         ]
       },
       {
@@ -62,37 +73,49 @@
       }
     ],
     "keySkills": {
-      "name": "key Skills",
+      "name": "Key Skills",
       "skills": [
-        "Advanced proficiency in TypeScript, SASS, ReactJS, Angular, Node.js, Java (SpringBoot).",
+        "Advanced proficiency in TypeScript, React, Next.js, Astro, React Native, Node.js (NestJS) and Java (Spring Boot).",
+        "AI agents and automation: Vapi, ElevenLabs, n8n, Claude, OpenAI, LangChain, Supabase and vector databases (Qdrant); computer vision with Python.",
         "Strong debugging and testing skills to ensure robust code and functionality.",
         "Ability to lead projects independently and work effectively in a team environment."
       ]
     }
   },
   "es": {
-    "professionalTitle": "Desarrollador Full Stack",
+    "professionalTitle": "Jefe de IA · Desarrollador Full Stack",
     "appTitles": {
       "skills": "Aptitudes",
       "languagues": "Idiomas",
       "hobbies": "Hobbies",
       "contact": "Contacto",
-
       "profile": "Perfil",
-      "education": "Educacion",
+      "education": "Educación",
       "employmentHistory": "Historial Laboral"
     },
     "presentation": [
       "<code>< Hola soy Stiven Diaz /> 👋</code>",
       "<span>- 🎉 Tengo <span id='yearsOld'></span></span>",
-      "<span>- 🥇 Soy un Desarrollador Full Stack</span>"
+      "<span>- 🥇 Jefe de IA y Desarrollador Full Stack: agentes de voz, automatización, web y móvil</span>"
     ],
-    "description": "Soy un Desarrollador Full Stack con amplia experiencia en todas las etapas del desarrollo web, desde el diseño y la arquitectura inicial hasta el despliegue y mantenimiento. Tengo una sólida formación en el desarrollo, prueba y depuración de aplicaciones tanto de frontend como de backend, asegurando una integración y rendimiento sin problemas. <br /><br /> Poseo un conjunto de habilidades diverso y versátil, con dominio en tecnologías como TypeScript, SASS, ReactJS, Angular, Node.js y Java (SpringBoot). Soy competente en la autogestión durante proyectos independientes y sobresalgo en entornos de trabajo en equipo.",
+    "description": "Desarrollador Full Stack y Jefe de Inteligencia Artificial con más de 4 años de experiencia construyendo productos de extremo a extremo, desde la arquitectura y el diseño de la interfaz hasta el despliegue y el soporte en producción. Desde diciembre de 2025 lidero el área de IA en Efletexia, empresa de transporte de carga y logística, donde desarrollo agentes de voz (Vapi, ElevenLabs), un agente negociador que negocia por llamada y continúa por WhatsApp, lectura de placas en tiempo real con Python sobre cámaras RTSP y decenas de automatizaciones con n8n. <br /><br /> También soy consultor en Néutica, donde desarrollo aplicaciones web, apps móviles y landing pages (Wanance, BlackFrost, Tu Cabaña). Mi stack: TypeScript, React, Next.js, Astro, React Native, Node.js (NestJS), Java (Spring Boot) y Python, además de Claude, OpenAI y LangChain para IA.",
     "professionalExperiences": [
       {
-        "name": "Desarrollo Web de Extremo a Extremo",
+        "name": "Desarrollo de Producto de Extremo a Extremo (Web y Móvil)",
         "descriptions": [
-          "Habilidad en desarrollar y mantener portales web complejos y aplicaciones internas, implementando nuevas funciones y optimizando funcionalidades existentes para diversos clientes, incluidos CENOSA, Do it Center, ILP, CEMPRO, MQA Americas y Feduro."
+          "Diseño, desarrollo y despliegue de productos completos: aplicaciones web, apps Android/iOS, landing pages y paneles administrativos, desde los requisitos hasta producción (Wanance, BlackFrost, Tu Cabaña, Vainilla Rosse)."
+        ]
+      },
+      {
+        "name": "Agentes de IA y Automatización",
+        "descriptions": [
+          "Agentes de voz con Vapi y ElevenLabs, un agente negociador multicanal (llamada + WhatsApp), chatbots y flujos automatizados con n8n, Claude, OpenAI y LangChain, integrados con WhatsApp, Instagram y Twilio."
+        ]
+      },
+      {
+        "name": "Visión por Computadora",
+        "descriptions": [
+          "Reconocimiento de placas vehiculares (ALPR) en tiempo real con Python, procesando video en vivo de cámaras IP por RTSP e integrando los resultados a los flujos de negocio."
         ]
       },
       {
@@ -133,11 +156,12 @@
       }
     ],
     "keySkills": {
-      "name": "Aptitudes Claves",
+      "name": "Aptitudes Clave",
       "skills": [
-        "Dominio avanzado de TypeScript, SASS, ReactJS, Angular, Node.js, Java (SpringBoot).",
+        "Dominio avanzado de TypeScript, React, Next.js, Astro, React Native, Node.js (NestJS) y Java (Spring Boot).",
+        "Agentes de IA y automatización: Vapi, ElevenLabs, n8n, Claude, OpenAI, LangChain, Supabase y bases de datos vectoriales (Qdrant); visión por computadora con Python.",
         "Fuertes habilidades de depuración y pruebas para garantizar código robusto y funcional.",
-        "Capacidad para liderar proyectos de forma independiente y trabajar eficazmente en un entorno de equipo."
+        "Capacidad para liderar proyectos de forma independiente y trabajar eficazmente en equipo."
       ]
     }
   }
